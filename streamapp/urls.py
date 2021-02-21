@@ -2,6 +2,7 @@ from django.urls import path
 from streamapp import views
 
 urlpatterns = [
-    path('stream', views.main, name='home'),
-    path('feed', views.feed, name='feed')
+    path('stream/', views.stream, name='stream'),
+    path('ipfeed', views.ipfeed, name='ipfeed')
 ]
+    
